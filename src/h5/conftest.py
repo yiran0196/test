@@ -3,6 +3,7 @@ from selenium import webdriver
 
 @pytest.fixture()
 def wy_login():
+    # 打开浏览器
     driver = webdriver.Chrome()
     driver.implicitly_wait(10)
     # driver.maximize_window()
@@ -11,6 +12,7 @@ def wy_login():
 
 @pytest.fixture()
 def open_chrome():
+    # 打开浏览器非调试模式
     options = webdriver.ChromeOptions()
     options.add_experimental_option("excludeSwitches",['enable-automation'])
     driver = webdriver.Chrome(options=options)
