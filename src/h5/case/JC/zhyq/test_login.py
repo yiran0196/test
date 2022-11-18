@@ -15,8 +15,7 @@ class TestZhyq:
         # time.sleep(1)
         # driver.find_element_by_xpath("//input[@placeholder='请输入用户名']").send_keys("18682970101")
         # driver.find_element_by_xpath("//input[@placeholder='请输入密码']").send_keys("Zkf960114")
-        # driver.find_element_by_xpath("//input[@placeholder='请输入验证码']").send_keys("1111")
-        # driver.find_element_by_xpath("//div[@class='el-form-item__content']//button[@class='el-button el-button--default']//span").click()
+        #
         time.sleep(2)
         excepted = "周开发园区"
         actual = driver.find_element_by_xpath("//span[@class='user-name']").text
@@ -25,5 +24,5 @@ class TestZhyq:
         #    print('断言成功')
         # else:
         #     print('断言失败，请检查用例')
-        assert actual == excepted
+        assert excepted == actual
 
